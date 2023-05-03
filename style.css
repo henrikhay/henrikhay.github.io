@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+#game-navbar{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    border: 1px black solid;
+    background-color: bisque;
+}
+
+#game-navbar-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#choose-game{
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+
+
+
+
+/* Styling for nytt spillelement */
+#new-game{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: 3px solid black;
+    padding: 5px;
+    background-color: whitesmoke;
+}
+
+#new-game:hover, #choose-game:hover{
+    cursor: pointer;
+    background-color:gainsboro;
+}
+
+#flag-button:hover{
+    cursor: pointer;
+}
+
+
+/* Styling for brettet */
+#board{
+    height: 320px;
+    width: 320px;
+    border: 10px solid darkgreen;
+    background-color:green;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styling for divene som genereres og legges til i brettet */
+#board div{
+    width: 38px;
+    height: 38px;
+    border: 1px solid gainsboro;
+
+    /* tekst */
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board:hover{
+    cursor:default;
+}
+
+/* Viser hvilke ruter som har blitt trykket på */
+.tile-clicked{
+    background-color:gainsboro;
+}
+
+/* Ulike klasser som matcher til hvor mange bomber er rundt hver rute */
+/* Fargene matcher det origianale minesweeperspillet */
+.n1{
+    color: blue;
+}
+
+.n2{
+    color: green;
+}
+
+.n3{
+    color: red;
+}
+
+.n4{
+    color: navy;
+}
+
+.n5{
+    color: brown;
+}
+
+.n6{
+    color: teal;
+}
+
+.n7{
+    color: black;
+}
+
+.n8{
+    color: grey;
+}
+
+/* Flagknappen */
+#flag-button{
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    background-color: gainsboro;
+    border: none;
+}
+
+img{
+    width: 48px;
+    height: 48px;
+}
